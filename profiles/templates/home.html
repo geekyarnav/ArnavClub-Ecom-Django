@@ -1,0 +1,140 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <!--
+    ADD  HEAD SECTION OF BLOG
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- END ADD  HEAD SECTIONOF BLOG-->
+  
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+<!--Jquery CDN-->
+<script src="{% static 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js' %}"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+ 
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+    <body>
+        <!--==========================
+          Header
+        ============================-->
+        <header id="header">
+          <div class="container-fluid">
+      
+            <div id="logo" class="pull-left">
+              <h1><a href="{% static '#intro" class="scrollto">Arnav Club</a></h1>
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <!--<a href="#intro"><img src="{% static 'img/logo.png' %}" alt="" title="" /></a>
+              --></div>
+      
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+              <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li class="menu-has-children"><a href="{% url 'services' %}">Our Services</a>
+               <ul>
+                    <li><a href="#">Web Services</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Multimedia Services</a></li>
+                    <li><a href="#">SEO</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'contacts' %}">Contacts</a></li>
+              </ul>
+            </nav><!-- #nav-menu-container -->
+          </div>
+        </header><!-- #header -->
+      
+        <!--==========================
+          Intro Section
+        ============================-->
+        <section id="intro">
+          <div class="intro-container">
+            <div id="intro-Carousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      
+              <ol class="carousel-indicators"></ol>
+      
+              <div class="carousel-inner" role="listbox">
+      
+                <div class="carousel-item active">
+                  <div class="carousel-background"><img src="{% static 'img/intro-carousel/1.jpg' %}" alt=""></div>
+                  <div class="carousel-container">
+                    <div class="carousel-content">
+                      <h2>Shop With Us</h2>
+                      <p>ArnavClub is the No.1 E-Commerce website of India</p>
+                      <a href="{% url 'products' %}" class="btn-get-started scrollto">100% CASHBACK* On All Products</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="carousel-background"><img src="{% static 'img/intro-carousel/2.jpg' %}" alt=""></div>
+                  <div class="carousel-container">
+                    <div class="carousel-content">
+                      <h2>SALE 50% On All Products</h2>
+                      <p>ArnavClub is the No.1 E-Commerce website of India</p>
+                       <a href="{% url 'products' %}" class="btn-get-started scrollto">20% Discount On HDFC Cards</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="carousel-background"><img src="{% static 'img/intro-carousel/3.jpg' %}" alt=""></div>
+                  <div class="carousel-container">
+                    <div class="carousel-content">
+                      <h2>100% CASHBACK</h2>
+                      <p>Para</p>
+                      <a href="{% url 'products' %}" class="btn-get-started scrollto"></a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+      
+              <a class="carousel-control-prev" href="{% static '#introCarousel' %}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+      
+              <a class="carousel-control-next" href="{% static '#introCarousel' %}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              </div>
+          </div>
+          
+        <ul class="footer-social">
+            <a href="https://www.facebook.com" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        <a href="https://plus.google.com" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Designed by&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><h1>ARNAV RASTOGI</h1></a></ul></section>
+        </section><!-- #intro -->        
+</body>
+</html>
