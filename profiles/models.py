@@ -12,6 +12,16 @@ class Profile(models.Model):
 def __unicode__(self):
     return self.name
 
+
+# New Contact Bug Fix
+
+# class Contact(models.Model):
+#     email = models.EmailField()
+#     subject = models.CharField(max_length=255)
+#     message = models.TextField()
+
+#     def __str__(self):
+#         return self.email
 # # ADD
 # class BlogArticle (models.Model):
 #     #fields

@@ -15,25 +15,26 @@
 """
 from django.contrib import admin
 from django.conf import settings
-from django.conf.urls import url
-from django.urls import path
+from django.urls import include, path
+# from django.conf.urls import url
+# from django.urls import path
 from profiles import models
 from profiles import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-#ADD
-#urlpatterns = [
+# ADD
+# urlpatterns = [
 #    path('',views.index),
 #    path('addblog/',views.createblog)
 
 urlpatterns = [
 path('admin/', admin.site.urls),
-#url(r'^$',views.home_view, name='home'),
+# url(r'^$',views.home_view, name='home'),
 path('', views.home_view , name='home'),
 path('about/', views.about_view ,name='about'),
 path('products/',views.products_view , name='products'),
 path('contacts/',views.contact_view , name='contacts'),
-path('services/',views.services_view ,name='services'),
+path('services/',views.services_view ,name='services')
 # path('blogs/',views.blogs_view ,name='blogs'),
 # path('addblog/',views.createblog ,name='addblog'),
 ]
